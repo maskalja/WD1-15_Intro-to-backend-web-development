@@ -1,0 +1,52 @@
+.lpink {
+    color: #f5cbef;
+}
+
+.dpink {
+    color: #c478bf;
+}
+
+.heading {
+    font-family: Comic Sans;
+    font-size: 35px;
+    font-style: italic;
+    color: #d37746;
+}
+
+.link {
+    font-family: Comic Sans;
+    font-size: 25px;
+    color: #c478bf;
+}
+
+p {
+     color: #f5abea;
+     font-size: 18px;
+}
+
+img {
+    padding: 5px;
+    width: 500px;
+    border: 2px #d37746 solid;
+
+}
+
+img:hover {
+    border: 3px #ad0090 solid;
+    border-radius: 20px;
+    transform: rotate(-8deg);
+    position: relative;
+    left: 15px;
+}
+
+button {
+    padding: 10px 22px;
+    background-color: #fff2d9;
+    border: 2px #c478bf solid;
+    border-radius: 10px
+}
+
+button:hover {
+    background-color: #d37746;
+    color: white;
+}
