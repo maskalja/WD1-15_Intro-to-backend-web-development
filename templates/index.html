@@ -1,18 +1,18 @@
-<!DOCTYPE>
-<html>
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Our first web app</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-</head>
+    {% block content %}
+    <p>Tole je index page</p>
+    {{weather_info}}
+    {{current_year}}
+<ul>
+    {% if cities %}
+        {% for city in cities %}
+    <li>{{city}}</li>
+        {% endfor %}
+    {% else %}
+        There is no cities
+    {% endif %}
+</ul>
 
-<body>
-    <a href="/about">About</a>
-    <a href="/portfolio">Portfolio</a>
-    <h2>Welcome to our web app!</h2>
-    <br>
-    <img src="/static/img/Gold.jpeg">
-</body>
+    {% endblock content %}
 
-</html>

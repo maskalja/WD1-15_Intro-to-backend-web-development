@@ -1,10 +1,14 @@
 from flask import Flask, render_template
+import datetime
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    weather_info = "Danes je lep dan"
+    current_year = datetime.datetime.now().year
+    cities = ["Ljubljana", "Celje", "Maribor"]
+    return render_template("index.html", weather_info=weather_info, current_year=current_year, cities=cities)
 
 @app.route("/about")
 def about():

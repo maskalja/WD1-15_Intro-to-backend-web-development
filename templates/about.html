@@ -1,16 +1,9 @@
-<!DOCTYPE>
-<html>
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>About</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-</head>
+    {% block title %}
+        <title>Tiko | About</title>
+    {% endblock title%}
 
-<body>
-    <a href="/">Index</a>
-    <a href="/portfolio">Portfolio</a>
-    <h2>About!</h2>
-</body>
-
-</html>
+    {% block content %}
+    <p>Tole je about page</p>
+    {% endblock content %}
