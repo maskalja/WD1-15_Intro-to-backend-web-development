@@ -1,16 +1,24 @@
 {% extends "base.html" %}
 
+    {% block title %}
+        <title>Golden Page</title>
+    {% endblock title %}
+
     {% block content %}
-    <p>Tole je index page</p>
-    {{weather_info}}
-    {{current_year}}
+    <h2>Welcome to the golden page!</h2>
+    <br>
+    <img src="/static/img/Gold.jpeg">
+    <br>
+    <p class="p1">{{hello}}. We are your best gold keepers since 1782, reliable through {{current_year - 1782}} years!</p>
+    <p class="p1">Check our money makers:</p>
+
 <ul>
-    {% if cities %}
-        {% for city in cities %}
-    <li>{{city}}</li>
+    {% if projects %}
+        {% for project in projects %}
+    <li><p class="p2">{{project}}</p></li>
         {% endfor %}
     {% else %}
-        There is no cities
+        There is no projects
     {% endif %}
 </ul>
 

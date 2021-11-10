@@ -1,5 +1,16 @@
 {% extends "base.html" %}
 
+    {% block title %}
+        <title>GoldenPage | Portfolio</title>
+    {% endblock title %}
+
+    {% block image %}
+        <img src="/static/img/coins.png">
+    {% endblock image %}
+
     {% block content %}
-    <p>Tole je portfolio page</p>
+        <h2>Our projects:</h2>
+        <a href="/Boogle">Boogle</a>
+        <a href="/Fakebook">Fakebook</a>
+        <a href="/SideHustle">SideHustle</a>
     {% endblock content %}

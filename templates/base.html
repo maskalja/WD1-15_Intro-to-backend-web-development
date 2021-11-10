@@ -3,21 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
+
     {% block title %}
     {% endblock title%}
+
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
 <body>
-    <a href="/">Index</a>
-    <a href="/about">About</a>
-    <a href="/portfolio">Portfolio</a>
-    <h2>Welcome to our web app!</h2>
-    <br>
-    <img src="/static/img/Gold.jpeg">
+    <div class="navbar">
+        <a href="/">Index</a>
+        <a href="/about">About</a>
+        <a href="/portfolio">Portfolio</a>
+    </div>
 
+    {% block image %}
+    {% endblock image %}
     {% block content %}
-
     {% endblock content %}
 
 </body>

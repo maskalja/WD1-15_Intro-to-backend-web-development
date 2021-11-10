@@ -1,8 +1,40 @@
-body{
-    background: white;
+body {
+    margin:0
+}
+
+.navbar {
+    background: #ffeb7b;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    padding-right: 10px;
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Fantasy", "Papyrus";
+}
+
+a:hover {
+  color: #d26b0c;
+  text-shadow: 0 0 2px black;
 }
 
 h2 {
     color: gold;
-    border: solid black 2px;
+    margin: 15px;
+    font-family: "Fantasy", "Papyrus";
 }
+
+.p1 {
+    font-family: "Fantasy", "Papyrus";
+    margin: 15px;
+}
+.p2 {
+    font-family: "Fantasy", "Papyrus";
+    font-size: 12px;
+    margin: 8px;
